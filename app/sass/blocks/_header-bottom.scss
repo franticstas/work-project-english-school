@@ -1,0 +1,8 @@
+.header-bottom {
+  height: 850px;
+  background: url("../img/mask-index-header.svg") left 50% bottom -1px / 102% no-repeat, url("../img/bg-header.jpg") left 50% top 50% / cover no-repeat;
+
+  @include tablet {
+    padding-top: 25px;
+  }
+}

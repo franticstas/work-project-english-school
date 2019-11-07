@@ -1,0 +1,165 @@
+/*
+ * Стили навигации в хедере
+ */
+.header__nav {
+
+}
+
+.header__nav-list,
+.header__nav-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__nav-list {
+  @include media(1000px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.header__nav-item {
+
+}
+
+.header__nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header__nav-item ul {
+  display: none;
+
+  @include desktop {
+    display: block;
+    opacity: 0;
+  }
+}
+
+.header__nav-item {
+  @include desktop {
+    position: relative;
+  }
+}
+
+.header__nav-item > a:hover + ul {
+  @include desktop {
+    position: absolute;
+    width: 250px;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 6px;
+    opacity: 1;
+    transition: all 1s;
+  }
+}
+
+.header__nav-button {
+  @include media(1000px) {
+    display: none;
+  }
+}
+
+.header__nav-wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*
+ * Стили мобильного меню
+ */
+@media (max-width: 1000px) {
+  .header__nav {
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    top: 0;
+    right: -270px;
+    transition: all 1s;
+    background-color: cadetblue;
+  }
+
+  .header__nav--open {
+    right: 0;
+  }
+
+  .header__nav-list {
+    padding-top: 30px;
+  }
+
+  .header__nav-item {
+    margin: 5px 0;
+  }
+
+  .header__nav-item a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 5px 0;
+  }
+
+  .header__nav-button {
+    background: none;
+    min-width: 50px;
+    min-height: 50px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all 250ms;
+    z-index: 0;
+    align-self: flex-start;
+    position: absolute;
+    left: -55px;
+  }
+
+  .header__nav-button span {
+    background-color: deeppink;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 10px;
+    border-radius: 4px;
+    transition: all .5s;
+  }
+
+  .header__nav-button {
+    span:first-child {
+      top: 15px;
+    }
+    span:nth-child(2) {
+      top: 25px;
+    }
+    span:nth-child(3) {
+      top: 35px;
+    }
+  }
+
+  .header__nav-button {
+    span:first-child {
+      transition: top .55s .55s, transform .55s;
+    }
+    span:nth-child(2),
+    span:nth-child(3) {
+      transition: top .55s .55s, transform .55s;
+    }
+  }
+
+  .header__nav--open .header__nav-button {/*При открытом меню*/
+    span:first-child {
+      top: 25px;
+      transform: rotate(45deg);
+      transition: top .55s, transform .55s .55s;
+    }
+    span:nth-child(2),
+    span:nth-child(3) {
+      top: 25px;
+      transform: rotate(-45deg);
+      transition: top .55s, transform .55s .55s;
+    }
+  }
+}

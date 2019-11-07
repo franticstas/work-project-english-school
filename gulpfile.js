@@ -11,7 +11,7 @@ var notify = require("gulp-notify");
 
 gulp.task('css', function () {
   return gulp.src('app/sass/**/*.scss')
-    .pipe(plumber())
+   .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
@@ -21,10 +21,10 @@ gulp.task('css', function () {
 });
 
 gulp.task('pug', function() {
-  return gulp.src("app/pug/**/*.pug")
+  return gulp.src("app/pug/*.pug")
     .pipe(plumber({
-      errorHandler: notify.onError()
-    }))
+     errorHandler: notify.onError()
+   }))
     .pipe(pug({
       pretty: true
     }))
@@ -41,7 +41,7 @@ gulp.task('serve', function() {
 
    gulp.watch("app/sass/**/*.{scss,sass}", gulp.series("css"));
    gulp.watch("app/pug/**/*.pug", gulp.series("pug"));
-
+   //gulp.watch("app/js/*.js").on("change", browserSync.reload);
 });
 
 
