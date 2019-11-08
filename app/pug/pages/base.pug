@@ -20,7 +20,26 @@ html(lang="ru")
             a(href='mailto:info@expresslingua.ru').header-top__email info@expresslingua.ru
           address ул. Текучева, д. 139 В оф. 203 (2 этаж)
       div.header-bottom
+        //- Вставка навигации
         include ../modules/header-nav.pug
+        div.header-bottom__wrapper.wrapper
+          div.header-bottom__left
+            .header-bottom__title IMPROVE YOUR
+              span  LANGUAGE #{' '}
+              | SKILLS
+            div.header-bottom__description Наш языковой центр предоставляет услуги группового и индивидуального обучения английскому языку, а также другим современным языкам для любого возраста и уровня знаний.
+          div.header-bottom__right
+            form.header-bottom__form
+              div.header-bottom__form-title Запишись на бесплатное занятие
+              label
+                input(type="text" placeholder="Ваше имя")
+              label
+                input(type="text" placeholder="Телефон")
+              label
+                input(type="email" placeholder="E-mail")
+              button(type="submit") Отправить заявку
+    main
+      section.
   footer
   script( src="js/libs/jquery-3.4.1.min.js")
   script( src="js/script.js")

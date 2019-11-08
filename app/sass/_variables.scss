@@ -1,4 +1,4 @@
-$desktop-width: 1435px;
+$desktop-width: 1170px;
 $tablet-width: 768px;
 
 @font-face {
@@ -37,7 +37,26 @@ $tablet-width: 768px;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+  url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 $Lato: "Lato", "Arial", sans-serif;
+$Montserrat: "Montserrat", "Arial", sans-serif;
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {

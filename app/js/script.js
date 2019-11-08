@@ -15,3 +15,10 @@ $('.mask').click(function() {
   $('body').removeClass('overflow-hidden');
   $('.mask').removeClass('show');
 });
+
+let $headerNavItems = $('.header__nav-item');
+$headerNavItems.each(function () {
+  if ($(this).find('ul').length) {
+    $(this).addClass('header__nav-item--sub');
+  }
+});

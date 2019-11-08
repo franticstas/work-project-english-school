@@ -41,8 +41,8 @@ gulp.task('serve', function() {
 
    gulp.watch("app/sass/**/*.{scss,sass}", gulp.series("css"));
    gulp.watch("app/pug/**/*.pug", gulp.series("pug"));
-   //gulp.watch("app/js/*.js").on("change", browserSync.reload);
+   gulp.watch("app/js/*.js").on("change", browserSync.reload);
 });
 
 
-gulp.task("start", gulp.series("css", "pug", "serve"));
+gulp.task("start", gulp.parallel("css", "pug", "serve"));
