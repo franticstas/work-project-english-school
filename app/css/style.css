@@ -403,10 +403,14 @@ main {
 
 .wrapper {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   max-width: 1170px; }
-  @media (min-width: 1430px) {
+  @media (min-width: 1370px) {
+    .wrapper {
+      max-width: 1216px;
+      padding: 0; } }
+  @media (min-width: 1460px) {
     .wrapper {
       max-width: 1430px; } }
 
@@ -808,3 +812,233 @@ main {
       transition: top .55s, -webkit-transform .55s .55s;
       transition: top .55s, transform .55s .55s;
       transition: top .55s, transform .55s .55s, -webkit-transform .55s .55s; } }
+
+.section-title {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  color: #4E4E4E;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700; }
+  @media (min-width: 1360px) {
+    .section-title {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row;
+              flex-flow: row;
+      max-width: 720px;
+      margin: 0 auto;
+      margin-bottom: 60px; } }
+  .section-title::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #4E4E4E;
+    top: 25px;
+    left: 0; }
+
+.section-title__icon {
+  width: 52px;
+  height: 52px;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49.3975 21.765C48.8714 21.765 48.4453 22.1917 48.4453 22.7172V26.1104C48.4453 28.0575 46.8609 29.642 44.9137 29.642H39.4865C39.2339 29.642 38.992 29.7419 38.8131 29.9205L32.2335 36.5004V30.5941C32.2335 30.0681 31.8071 29.642 31.2813 29.642H17.649C15.7018 29.642 14.1174 28.0578 14.1174 26.1104V11.7071C14.1174 9.75992 15.7018 8.17578 17.649 8.17578H44.9137C46.8609 8.17578 48.4453 9.75992 48.4453 11.7071V15.1C48.4453 15.626 48.8714 16.0521 49.3975 16.0521C49.9229 16.0521 50.3496 15.626 50.3496 15.1V11.7071C50.3496 8.70988 47.9112 6.27148 44.9137 6.27148H17.649C14.6515 6.27148 12.2131 8.70988 12.2131 11.7071V23.9395H5.28294C3.25218 23.9395 1.59961 25.5915 1.59961 27.6228V36.3969C1.59961 38.4282 3.25218 40.0802 5.28294 40.0802H8.19502L12.9141 44.7996C13.0965 44.982 13.3402 45.0787 13.5878 45.0787C13.7103 45.0787 13.8344 45.0549 13.9519 45.0061C14.3078 44.8588 14.5399 44.5118 14.5399 44.1265V40.0802H21.8923C23.9233 40.0802 25.5756 38.4282 25.5756 36.3969V31.5463H30.3292V38.799C30.3292 39.1843 30.5613 39.5312 30.9171 39.6785C31.0347 39.7273 31.1585 39.7511 31.2813 39.7511C31.5292 39.7511 31.7726 39.6544 31.9547 39.472L39.8807 31.5463H44.9137C47.9112 31.5463 50.3496 29.1079 50.3496 26.1104V22.7172C50.3496 22.1917 49.9229 21.765 49.3975 21.765V21.765ZM23.6716 36.3969C23.6716 37.3782 22.8736 38.1759 21.8923 38.1759H13.5878C13.0617 38.1759 12.6356 38.6026 12.6356 39.128V41.828L9.26262 38.455C9.08409 38.2765 8.84189 38.1759 8.58927 38.1759H5.28294C4.30193 38.1759 3.50391 37.3782 3.50391 36.3969V27.6228C3.50391 26.6418 4.30193 25.8438 5.28294 25.8438H12.2131V26.1104C12.2131 29.1079 14.6515 31.5463 17.649 31.5463H23.6716V36.3969Z' fill='%234E4E4E'/%3E%3Cpath d='M40.5647 12.511H21.9978C21.472 12.511 21.0457 12.9374 21.0457 13.4631C21.0457 13.9892 21.472 14.4153 21.9978 14.4153H40.5647C41.0905 14.4153 41.5169 13.9892 41.5169 13.4631C41.5169 12.9374 41.0905 12.511 40.5647 12.511V12.511Z' fill='%234E4E4E'/%3E%3Cpath d='M41.5169 18.6051C41.5169 18.0793 41.0905 17.653 40.5647 17.653H21.9978C21.472 17.653 21.0457 18.0793 21.0457 18.6051C21.0457 19.1312 21.472 19.5573 21.9978 19.5573H40.5647C41.0905 19.5573 41.5169 19.1312 41.5169 18.6051Z' fill='%234E4E4E'/%3E%3Cpath d='M21.9978 22.7946C21.472 22.7946 21.0457 23.2209 21.0457 23.7467C21.0457 24.2728 21.472 24.6989 21.9978 24.6989H32.7095C33.2352 24.6989 33.6616 24.2728 33.6616 23.7467C33.6616 23.2209 33.2352 22.7946 32.7095 22.7946H21.9978Z' fill='%234E4E4E'/%3E%3Cpath d='M49.3975 17.9564C48.8732 17.9564 48.4453 18.3843 48.4453 18.9086C48.4453 19.4331 48.8732 19.8607 49.3975 19.8607C49.9217 19.8607 50.3496 19.4331 50.3496 18.9086C50.3496 18.3843 49.9217 17.9564 49.3975 17.9564Z' fill='%234E4E4E'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0 75px;
+  position: relative; }
+
+@media (min-width: 1360px) {
+  .section-title__text {
+    position: relative;
+    background-color: #ffffff;
+    padding-right: 32px; } }
+
+.learning__list .swiper-wrapper {
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .learning__list .swiper-wrapper {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.learning__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column; }
+  @media (min-width: 768px) {
+    .learning__item {
+      max-width: 49%;
+      margin-right: 2%;
+      margin-bottom: 16px; } }
+  @media (min-width: 1370px) {
+    .learning__item {
+      width: 384px;
+      margin-right: 32px;
+      padding-bottom: 32px;
+      margin-bottom: 32px; } }
+  @media (min-width: 1460px) {
+    .learning__item {
+      width: 455px; } }
+
+@media (min-width: 768px) {
+  .learning__item:nth-child(2n) {
+    margin-right: 0; } }
+
+@media (min-width: 1360px) {
+  .learning__item:nth-child(2n) {
+    margin-right: 32px; } }
+
+@media (min-width: 1360px) {
+  .learning__item:nth-child(3n) {
+    margin-right: 0; } }
+
+.learning__item-title {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  border-left: 2px solid #ffffff;
+  padding-left: 0.6em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin: 0;
+  margin-bottom: 24px; }
+
+.learning__courses-list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0; }
+  @media (min-width: 1360px) {
+    .learning__courses-list {
+      margin-bottom: 32px; } }
+
+.learning__courses-item {
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.0625rem;
+  margin-bottom: 16px;
+  padding-left: 1.142em;
+  padding-top: 0.785em;
+  padding-bottom: 0.857em;
+  position: relative; }
+  @media (min-width: 1360px) {
+    .learning__courses-item {
+      max-width: 80%; } }
+  .learning__courses-item::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.27702 7.80045L4.72984 4.62934C5.05423 4.33142 5.09179 3.80815 4.81375 3.46058C4.78797 3.42835 4.75992 3.3983 4.72984 3.37067L1.27702 0.199563C0.952641 -0.0983553 0.464278 -0.0581036 0.186235 0.289467C0.0660576 0.439696 -3.22108e-07 0.631033 -3.13459e-07 0.828896L-3.62315e-08 7.17112C-1.62214e-08 7.6289 0.346345 8 0.773583 8C0.958246 8 1.13682 7.92922 1.27702 7.80045Z' fill='white'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 15px; }
+
+.learning__courses-item a {
+  color: #ffffff;
+  text-decoration: none; }
+
+.learning__courses-item:hover a {
+  color: #016BC1; }
+
+.learning__courses-item:hover {
+  background-color: #ffffff; }
+  .learning__courses-item:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.27702 7.80045L4.72984 4.62934C5.05423 4.33142 5.09179 3.80815 4.81375 3.46058C4.78797 3.42835 4.75992 3.3983 4.72984 3.37067L1.27702 0.199563C0.952641 -0.0983553 0.464278 -0.0581036 0.186235 0.289467C0.0660576 0.439696 -3.22108e-07 0.631033 -3.13459e-07 0.828896L-3.62315e-08 7.17112C-1.62214e-08 7.6289 0.346345 8 0.773583 8C0.958246 8 1.13682 7.92922 1.27702 7.80045Z' fill='%23016BC1'/%3E%3C/svg%3E%0A"); }
+
+.learning__courses-link-more {
+  background-color: #ffffff;
+  color: #016BC1;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.0625rem;
+  padding-top: 0.785em;
+  padding-bottom: 0.857em;
+  margin-top: auto;
+  text-align: center; }
+  @media (min-width: 1360px) {
+    .learning__courses-link-more {
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      padding: 0;
+      background-color: transparent;
+      color: #ffffff;
+      position: relative;
+      padding-right: 25px; } }
+  @media (min-width: 1360px) {
+    .learning__courses-link-more::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.02466 4L0.201976 1.17731C-0.0673508 0.907988 -0.0673508 0.471322 0.201976 0.201995C0.471303 -0.0673322 0.907969 -0.0673322 1.1773 0.201995L4.48764 3.51234C4.75697 3.78167 4.75697 4.21833 4.48764 4.48766L1.1773 7.798C0.907969 8.06733 0.471303 8.06733 0.201976 7.798C-0.0673508 7.52868 -0.0673508 7.09201 0.201976 6.82268L3.02466 4Z' fill='white'/%3E%3C/svg%3E%0A");
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 8px;
+      right: 5px;
+      top: 6px; } }
+
+.advantages {
+  margin-top: 56px; }
+
+.advantages__top-left {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px; }
+
+.advantages__title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px; }
+
+.advantages__sub-title {
+  font-weight: 600;
+  color: #4E4E4E;
+  margin-bottom: 24px; }
+
+.advantages__top-description {
+  color: #4E4E4E;
+  margin-bottom: 24px; }
+
+.advantages__top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column; }

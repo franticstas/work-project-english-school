@@ -22,3 +22,13 @@ $headerNavItems.each(function () {
     $(this).addClass('header__nav-item--sub');
   }
 });
+
+if ( $(window).width() < 768 ) {
+  var swiperLearning = new Swiper('.learning__list--swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+}

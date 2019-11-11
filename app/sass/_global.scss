@@ -68,11 +68,16 @@ main {
 
 .wrapper {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   max-width: $desktop-width;
 
-  @include media(1430px) {
+  @include media(1370px) {
+    max-width: 1216px;
+    padding: 0;
+  }
+
+  @include media(1460px) {
     max-width: 1430px;
   }
 }

@@ -5,7 +5,7 @@ html(lang="ru")
       meta( charset='UTF-8' )
       meta( name='viewport', content='width=device-width, initial-scale=1' )
       block script
-        script( )
+      link(rel='stylesheet', href='/css/swiper.min.css', type='text/css')
       link(rel='stylesheet', href='/css/style.css', type='text/css')
       title Школа инстранных языков
   body
@@ -24,7 +24,7 @@ html(lang="ru")
         include ../modules/header-nav.pug
         div.header-bottom__wrapper.wrapper
           div.header-bottom__left
-            .header-bottom__title IMPROVE YOUR
+            div.header-bottom__title IMPROVE YOUR
               span  LANGUAGE #{' '}
               | SKILLS
             div.header-bottom__description Наш языковой центр предоставляет услуги группового и индивидуального обучения английскому языку, а также другим современным языкам для любого возраста и уровня знаний.
@@ -39,7 +39,106 @@ html(lang="ru")
                 input(type="email" placeholder="E-mail")
               button(type="submit") Отправить заявку
     main
-      section.
+      //- Раздел обучение языкам ****************
+      section.learning
+        h1.section-title
+          span.section-title__icon
+          span.section-title__text Обучение языкам
+        //- Список курсов и слайдер
+        div.learning__list.wrapper.swiper-container.learning__list--swiper
+          div.swiper-wrapper
+            //- Блок курса и слайд
+            article(style="background-image: linear-gradient(89.68deg, rgba(55, 66, 131, 0.7), rgba(39, 124, 207, 0.7)), url('img/bg-english-block.jpg')").learning__item.swiper-slide
+              h3.learning__item-title Курсы Английского языка
+              ul.learning__courses-list
+                li.learning__courses-item
+                  a(href="#") Английский для взрослых
+                li.learning__courses-item
+                  a(href="#") Английский для студентов
+                li.learning__courses-item
+                  a(href="#") Детские курсы английского
+                li.learning__courses-item
+                  a(href="#") Подготовка к экзаменам
+              a(href="#").learning__courses-link-more Подробнее
+            //- Блок курса и слайд
+            article(style="background-image: linear-gradient(89.68deg, rgba(55, 66, 131, 0.7), rgba(39, 124, 207, 0.7)), url('img/bg-german-block.jpg')").learning__item.swiper-slide
+              h3.learning__item-title Курсы Немецкого языка
+              ul.learning__courses-list
+                li.learning__courses-item
+                  a(href="#") Немецкий для взрослых
+                li.learning__courses-item
+                  a(href="#") Немецкий для студентов
+                li.learning__courses-item
+                  a(href="#") Детские курсы немецкого
+                li.learning__courses-item
+                  a(href="#") Подготовка к экзаменам
+              a(href="#").learning__courses-link-more Подробнее
+            //- Блок курса и слайд
+            article(style="background-image: linear-gradient(89.68deg, rgba(55, 66, 131, 0.7), rgba(39, 124, 207, 0.7)), url('img/bg-franch-block.jpg')").learning__item.swiper-slide
+              h3.learning__item-title Курсы Французского языка
+              ul.learning__courses-list
+                li.learning__courses-item
+                  a(href="#") Французский для взрослых
+                li.learning__courses-item
+                  a(href="#") Французский для студентов
+                li.learning__courses-item
+                  a(href="#") Детские курсы французского
+                li.learning__courses-item
+                  a(href="#") Подготовка к экзаменам
+              a(href="#").learning__courses-link-more Подробнее
+            //- Блок курса и слайд
+            article(style="background-image: linear-gradient(89.68deg, rgba(55, 66, 131, 0.7), rgba(39, 124, 207, 0.7)), url('img/bg-spanish-block.jpg')").learning__item.swiper-slide
+              h3.learning__item-title Курсы Испанского языка
+              ul.learning__courses-list
+                li.learning__courses-item
+                  a(href="#") Испанский для взрослых
+                li.learning__courses-item
+                  a(href="#") Испанский для студентов
+                li.learning__courses-item
+                  a(href="#") Детские курсы испанского
+                li.learning__courses-item
+                  a(href="#") Подготовка к экзаменам
+              a(href="#").learning__courses-link-more Подробнее
+            //- Блок курса и слайд
+            article(style="background-image: linear-gradient(89.68deg, rgba(55, 66, 131, 0.7), rgba(39, 124, 207, 0.7)), url('img/bg-china-block.jpg')").learning__item.swiper-slide
+              h3.learning__item-title Курсы Китайского языка
+              ul.learning__courses-list
+                li.learning__courses-item
+                  a(href="#") Китайский для взрослых
+                li.learning__courses-item
+                  a(href="#") Китайский для студентов
+                li.learning__courses-item
+                  a(href="#") Детские курсы Китайского
+                li.learning__courses-item
+                  a(href="#") Подготовка к экзаменам
+              a(href="#").learning__courses-link-more Подробнее
+            //- Блок курса и слайд
+            article(style="background-image: linear-gradient(89.68deg, rgba(55, 66, 131, 0.7), rgba(39, 124, 207, 0.7)), url('img/bg-russian-block.jpg')").learning__item.swiper-slide
+              h3.learning__item-title Русский как инстранный
+              ul.learning__courses-list
+                li.learning__courses-item
+                  a(href="#") Русский для взрослых
+                li.learning__courses-item
+                  a(href="#") Русский для детей
+              a(href="#").learning__courses-link-more Подробнее
+          //- Пагинация сладера
+          div.swiper-pagination
+      //- Раздел Коммуникативная методика **************
+      section.advantages
+        div.wrapper
+          div.advantages__top
+            div.advantages__top-left
+              h2.advantages__title Коммуникативная методика
+              div.advantages__sub-title Разговорная практика с первых занятий!
+              div.advantages__top-description Методика лучше всего развивает навыки разговорной речи, общения, аудирования, не забывая при это про чтение, письмо и грамматику. Проведение занятий происходит полностью на изучаемом языке без использования родного языка. Специфической особенностью коммуникативного метода является попытка приблизить процесс обучения по его характеру к процессу реальной коммуникации.
+              div.advantages__top-description
+                b Мы уделяем большое внимание мотивации к общению и создаем все условия, чтобы взаимодействие учащихся было целенаправленным.
+            div.advantages__top-right
+              a(href="#") Дипломированные специалисты
+              a(href="#") Удобный график занятий
+              a(href="#") Подготовка к экзаменам
+              a(href="#") Постоянная практика
   footer
   script( src="js/libs/jquery-3.4.1.min.js")
+  script( src="js/libs/swiper.min.js")
   script( src="js/script.js")
