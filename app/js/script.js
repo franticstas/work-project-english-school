@@ -31,4 +31,30 @@ if ( $(window).width() < 768 ) {
       el: '.swiper-pagination',
     },
   });
+
+  var swiperAdvantages = new Swiper('.advantages--slider', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    breakpointsInverse: true,
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      320: {
+        slidesPerView: 1,
+      }
+    }
+  });
+
+  var swiperReviews = new Swiper('.reviews--swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
 }
