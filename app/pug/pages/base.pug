@@ -177,23 +177,78 @@ html(lang="ru")
             div.swiper-wrapper
               div.reviews__item.swiper-slide
                 div.reviews__item-img-block
-                  img(src="img/img-review.jpg")
+                  img(src="img/bg-adv4.jpg")
                 div.reviews__item-title Анастасия
                 div.reviews__item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis...
-                a.reviews__link Подробнее
+                a(href="#").reviews__link Подробнее
               div.reviews__item.swiper-slide
                 div.reviews__item-img-block
                   img(src="img/img-review.jpg")
                 div.reviews__item-title Анастасия
                 div.reviews__item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis...
-                a.reviews__link Подробнее
+                a(href="#").reviews__link Подробнее
               div.reviews__item.swiper-slide
                 div.reviews__item-img-block
                   img(src="img/img-review.jpg")
                 div.reviews__item-title Анастасия
                 div.reviews__item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis...
-                a.reviews__link Подробнее
+                a(href="#").reviews__link Подробнее
             div.swiper-pagination
+          div.reviews__more.button-more
+            a(href="#") Показать еще
+      section.sign-up
+        div.wrapper
+          div.sign-up__appeal LET’S GET started
+          h2.sign-up__title Начни учить иностранный язык вместе с нами!
+          a.sign-up__open-form Записаться
+          form.sign-up__form
+            label
+              input(type="text" placeholder="Ваше имя")
+            label
+              input(type="text" placeholder="Телефон")
+            button(type="submit").sign-up__open-form Записаться
+      section.last-news
+        h2.section-title
+          span.section-title__icon
+          span.section-title__text Последние публикации
+        div.wrapper
+          div.last-news__left
+            //- Новость
+            article.last-news__block
+              div.last-news__img-block
+                img(src="img/img-news1.jpg")
+              div.last-news__text-block
+                h3.last-news__title Lorem ipsum dolor sit amet, consectetur sit amet adipiscing elit
+                div.last-news__text Lorem ipsum dolor sit amet, consectetur sit amet adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                div.last-news__block-bottom
+                  time(datetime="2019-10-15") Октябрь 15, 2019
+                  a(href="#").last-news__block-link
+                    span Подробнее
+          div.last-news__right
+            //- Новость
+            article.last-news__block
+              div.last-news__img-block
+                img(src="img/img-news1.jpg")
+              div.last-news__text-block
+                h3.last-news__title Lorem ipsum dolor sit amet, consectetur sit amet adipiscing elit
+                div.last-news__text Lorem ipsum dolor sit amet, consectetur sit amet adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                div.last-news__block-bottom
+                  time(datetime="2019-10-15") Октябрь 15, 2019
+                  a(href="#").last-news__block-link
+                    span Подробнее
+            //- Новость
+            article.last-news__block
+              div.last-news__img-block
+                img(src="img/img-news2.jpg")
+              div.last-news__text-block
+                h3.last-news__title Lorem ipsum dolor sit amet, consectetur sit amet adipiscing elit
+                div.last-news__text Lorem ipsum dolor sit amet, consectetur sit amet adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                div.last-news__block-bottom
+                  time(datetime="2019-10-15") Октябрь 15, 2019
+                  a(href="#").last-news__block-link
+                    span Подробнее
+          div.last-news__more.button-more
+            a(href="#") Все новости
   footer
   script( src="js/libs/jquery-3.4.1.min.js")
   script( src="js/libs/swiper.min.js")

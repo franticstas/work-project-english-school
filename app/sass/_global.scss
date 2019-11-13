@@ -81,3 +81,18 @@ main {
     max-width: 1430px;
   }
 }
+
+.button-more a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(88.26deg, #374283 11.8%, #277CCF 102.74%);
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-weight: 600;
+  padding-top: 0.875rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}

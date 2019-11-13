@@ -1,0 +1,82 @@
+.sign-up {
+  background-image: linear-gradient(89.68deg, rgba(14, 48, 65, 0.7), rgba(54, 69, 81, 0.7)), url('../img/bg-sign-up.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 21px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+
+  @include media(1170px) {
+    padding-bottom: 56px;
+  }
+}
+
+.sign-up__appeal {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+
+.sign-up__title {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 40px;
+}
+
+.sign-up__open-form {
+  background: #2BA0FF;
+  box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: inline-block;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+a.sign-up__open-form {
+  @include media(1170px) {
+    display: none;
+  }
+}
+
+.sign-up__form {
+  display: none;
+
+  @include media(1170px) {
+    display: block;
+  }
+}
+
+.sign-up__form label {
+  margin-right: 24px;
+  border-radius: 5px;
+}
+
+.sign-up__form input {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #4E4E4E;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  padding-top: 0.9375rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  min-width: 224px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sign-up__form button {
+
+}

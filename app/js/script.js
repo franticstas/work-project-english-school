@@ -52,7 +52,7 @@ if ( $(window).width() < 768 ) {
 
   var swiperReviews = new Swiper('.reviews--swiper', {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 50,
     pagination: {
       el: '.swiper-pagination',
     },
