@@ -5,7 +5,15 @@
 
 .last-news .wrapper {
   @include media(1170px) {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 
+  @include media(1360px) {
+    flex-flow: row;
+    align-items: stretch;
+    justify-content: space-between;
   }
 }
 
@@ -16,6 +24,17 @@
 .last-news__right {
   @include media(1170px) {
     display: flex;
+    width: 700px;
+    justify-content: space-between;
+  }
+
+  @include media(1360px) {
+    flex-flow: column;
+    width: 614px;
+  }
+
+  @include media(1460px) {
+    width: 700px;
   }
 }
 
@@ -32,12 +51,39 @@
     display: flex;
     align-items: normal;
   }
+
+  @include tablet {
+    max-width: 600px;
+  }
 }
 
-.last-news__right .last-news__block {
+.last-news__left .last-news__block {/*Левый блок новостей*/
+  @include  media(1360px) {
+    flex-flow: column;
+    margin: 0;
+    max-width: 570px;
+  }
+
+  @include media(1460px) {
+    max-width: 700px;
+  }
+}
+
+.last-news__right .last-news__block {/*Правый блок новостей*/
   @include media(1170px) {
     flex-flow: column;
-    max-width: 300px;
+    max-width: 330px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  @include media(1360px) {
+    flex-flow: row;
+    max-width: 615px;
+  }
+
+  @include media(1460px) {
+    max-width: 700px;
   }
 }
 
@@ -52,13 +98,30 @@
     max-width: 240px;
     flex: 1 0 240px;
   }
+
+  @include media(1360px) {
+    flex: 1 0 auto;
+  }
 }
 
-.last-news__right .last-news__img-block {
+.last-news__left .last-news__img-block {/*Левый блок с фото*/
+  @include media(1360px) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.last-news__right .last-news__img-block {/*Правый блок с фото*/
   @include media(1170px) {
     flex: 1 0 100%;
     max-height: 180px;
     max-width: 100%;
+  }
+
+  @include media(1360px) {
+    max-width: 290px;
+    max-height: 100%;
   }
 }
 
@@ -73,10 +136,21 @@
   }
 }
 
+.last-news__left .last-news__img-block img {
+  @include media(1360px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .last-news__right .last-news__img-block img {
   @include media(1170px) {
     height: auto;
     width: 100%;
+  }
+
+  @include media(1360px) {
+    width: auto;
   }
 }
 
