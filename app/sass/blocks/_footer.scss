@@ -209,3 +209,34 @@
 .footer__bottom-right a {
   margin-left: 24px;
 }
+
+.footer__nav-title--hidden {
+  position: relative;
+  padding-right: 15px;
+
+  &:after {
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.199547 1.27702L3.37066 4.72984C3.66858 5.05423 4.19185 5.09179 4.53942 4.81375C4.57165 4.78797 4.6017 4.75992 4.62932 4.72984L7.80044 1.27702C8.09836 0.952641 8.0581 0.464278 7.71053 0.186235C7.5603 0.066058 7.36897 0 7.1711 0L0.82888 0C0.371102 0 0 0.346345 0 0.773583C0 0.958246 0.0707799 1.13682 0.199547 1.27702Z' fill='white'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 5px;
+    top: 9px;
+    right: 0;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.footer__nav-title--hidden + .footer__nav-list {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.footer__nav-title--show + .footer__nav-list {
+  display: block;
+}

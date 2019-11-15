@@ -1,6 +1,5 @@
 $('.header__nav-button').click(function() {
   $('.header__nav').toggleClass('header__nav--open');
-  //$('body').toggleClass('overflow-hidden');
   $('.mask').toggleClass('show');
 });
 
@@ -24,6 +23,20 @@ $headerNavItems.each(function () {
 });
 
 if ( $(window).width() < 768 ) {
+  $('.footer__nav-title').click(function() {//Открытие скрытие меню в footer
+    $(this).next().slideToggle(1000);
+  });
+
+  $('.learning-lang__item a').on('click', f_acc);
+
+  function f_acc(e){
+    e.preventDefault();
+    //скрываем все кроме того, что должны открыть
+    $('.learning-lang__item ul').not($(this).next()).slideUp(1000);
+    // открываем или скрываем блок под заголовком, по которому кликнули
+    $(this).next().slideToggle(1000);
+  }
+
   var swiperLearning = new Swiper('.learning__list--swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
