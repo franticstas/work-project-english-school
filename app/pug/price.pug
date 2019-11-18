@@ -1,1 +1,50 @@
 extends pages/base.pug
+
+block content
+  div.breadcrumbs.wrapper
+      ul.breadcrumbs__list
+        li.breadcrumbs__item
+          a(href="#") Главная
+        li.breadcrumbs__item
+          a Расписание и цены
+  main
+    section.price.wrapper
+      h1.section-title.section-long-title
+        span.section-title__icon
+        span.section-title__text Обучение иностранным языкам в Express Lingua
+      div.price__list
+        div.price__title Языки:
+        div.price__body
+          a(href="#") Прайс-лист Английского
+          a(href="#") Прайс-лист Немецкого
+          a(href="#") Прайс-лист Французского
+          a(href="#") Прайс-лист Испанского
+          a(href="#") Прайс-лист Китайского
+          a(href="#") Прайс-лист Русского
+      div.lang-group__list
+        div.lang-group__title Группы:
+        div.lang-group__body
+          a(href="#") Для детей
+          a(href="#") Для подростков
+          a(href="#") Для взрослых
+          a(href="#") Все группы
+      div.table__block
+        table
+          thead
+            tr
+              td Язык
+              td Уровень
+              td Название курса
+              td Форма обучения
+              td Стоимость
+          tbody
+            tr
+              td.table__lang-name Английский
+              td.table__level Начальный “Begginer”
+              td.table__course-name Начальный курс Английского языка для детей. Стоимость указана за 1 месяц с учетом скидки 50% при оплате за 12 месяцев. Общая стоимость курса – 999 000 рублей. 50 уроков в школе офлайн.
+              td.table__form-training Индивидуально
+              td
+                div.price__info
+                  div.table__old-price
+                  div.table__new-price
+                  a(href="#") Записаться

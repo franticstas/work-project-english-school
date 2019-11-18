@@ -71,3 +71,31 @@ if ( $(window).width() < 768 ) {
     },
   });
 }
+
+var gallerySubteachers = new Swiper('.subteachers--swiper-thumb', {
+  spaceBetween: 34,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+
+var swiperTeachers = new Swiper('.teachers--swiper-top', {
+  slidesPerView: 1,
+  spaceBetween: 100,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  thumbs: {
+    swiper: gallerySubteachers
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // breakpointsInverse: true,
+  // breakpoints: {
+  //   1170: {
+  //     spaceBetween: 0,
+  //   },
+});

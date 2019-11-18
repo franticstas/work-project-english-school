@@ -1,9 +1,22 @@
 .more-info__block {
+  margin-bottom: 60px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 
+  @include media(1170px) {
+    flex-flow: row;
+  }
 }
 
 .more-info__text {
+  font-size: 0.875rem;
+  line-height: 1.875rem;
 
+  @include media(1170px) {
+    max-width: 50%;
+    margin-right: 32px;
+  }
 }
 
 .more-info__text p {
@@ -11,11 +24,19 @@
 }
 
 .more-info__title {
-
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .more-info__img {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24), 0px 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  max-width: 700px;
 
+  @include media(1170px) {
+    max-width: 50%;
+  }
 }
 
 .more-info__img img {

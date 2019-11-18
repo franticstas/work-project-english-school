@@ -9,7 +9,7 @@ block content
         a Выбрать язык
   main
     section.learning-lang.wrapper
-      h1.section-title
+      h1.section-title.section-long-title
         span.section-title__icon
         span.section-title__text Обучение иностранным языкам в Express Lingua
       ul.learning-lang__list
@@ -73,3 +73,52 @@ block content
             b Мы уделяем большое внимание мотивации к общению и создаем все условия, чтобы взаимодействие учащихся было целенаправленным.
         div.more-info__img
           img(src="img/img-more.jpg")
+    //- Наши преподаватели
+    section.teachers__slider
+      h1.section-title
+        span.section-title__icon
+        span.section-title__text Наши преподаватели иностранных языков
+      div.wrapper
+        div.teachers__list.swiper-container.teachers--swiper-top
+          div.swiper-wrapper
+            div.swiper-slide
+              div.teachers__item
+                div.teachers__item-img-block
+                  img(src="img/bg-adv4.jpg")
+                div.teachers__item-title Анастасия Приходько
+                div.teachers__item-subtitle Преподователь “Английского языка” “Английского языка” “Английского языка”
+                div.teachers__item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis. ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis...
+                a(href="#").teachers__link Получить консультацию
+            div.swiper-slide
+              div.teachers__item
+                div.teachers__item-img-block
+                  img(src="img/img-review.jpg")
+                div.teachers__item-title Анастасия
+                div.teachers__item-subtitle Преподователь “Английского языка”
+                div.teachers__item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis...
+                a(href="#").teachers__link Получить консультацию
+            div.swiper-slide
+              div.teachers__item
+                div.teachers__item-img-block
+                  img(src="img/img-review.jpg")
+                div.teachers__item-title Анастасия
+                div.teachers__item-subtitle Преподователь “Английского языка”
+                div.teachers__item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis...
+                a(href="#").teachers__link Получить консультацию
+            div.swiper-slide
+              div.teachers__item
+                div.teachers__item-img-block
+                  img(src="img/img-review.jpg")
+                div.teachers__item-title Анастасия
+                div.teachers__item-subtitle Преподователь “Английского языка”
+                div.teachers__item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis...
+                a(href="#").teachers__link Получить консультацию
+          div.swiper-pagination
+        div.subteachers__list.swiper-container.subteachers--swiper-thumb
+          div.swiper-wrapper
+            div(style="background-image:url('img/bg-adv4.jpg')").subteachers__item.swiper-slide
+            div(style="background-image:url('img/img-review.jpg')").subteachers__item.swiper-slide
+            div(style="background-image:url('img/img-review.jpg')").subteachers__item.swiper-slide
+            div(style="background-image:url('img/img-review.jpg')").subteachers__item.swiper-slide
+          div.swiper-button-next
+          div.swiper-button-prev
