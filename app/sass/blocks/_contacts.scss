@@ -1,0 +1,50 @@
+.contacts {
+
+}
+
+.contacts__wrapper {
+
+}
+
+.contacts__left {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-weight: 600;
+  color: #4E4E4E;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24), 0px 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contacts__block {
+  margin-bottom: 15px;
+}
+
+.contacts__name {
+  margin-bottom: 7px;
+}
+
+.contacts__body {
+  font-weight: 400;
+  display: flex;
+  flex-flow: column;
+}
+
+.contacts__left a {
+  text-decoration: none;
+  color: #4E4E4E;
+}
+
+.contacts__left a,
+.contacts__left span {
+  margin-bottom: 7px;
+}
+
+.contacts__right {
+
+}
+
+.contacts__map {
+
+}

@@ -111,3 +111,39 @@ if ( $(window).width() < 1170 ) {
 }
 
 //$('.select--js').select2();
+
+//Кастомная метка на картах
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+      center: [47.244295, 39.594800],
+      zoom: 17
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+
+    // Создаём макет содержимого.
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    ),
+
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Компания «ZWEB»',
+      balloonContent: 'Компания «ZWEB»'
+    }, {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: 'default#image',
+      // Своё изображение иконки метки.
+      iconImageHref: 'src/img/GeoMark.png',
+      // Размеры метки.
+      iconImageSize: [168, 84],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [-90, -90]
+    });
+
+  myMap.geoObjects
+    .add(myPlacemark);
+});
+});
+
