@@ -13,18 +13,18 @@ block content
         span.section-title__icon
         span.section-title__text Обучение иностранным языкам в Express Lingua
       div.price__list
-        div.price__title Языки:
+        div.price__title.price__title--js Языки:
         div.price__body
-          a(href="#") Прайс-лист Английского
+          a(href="#").active Прайс-лист Английского
           a(href="#") Прайс-лист Немецкого
           a(href="#") Прайс-лист Французского
           a(href="#") Прайс-лист Испанского
           a(href="#") Прайс-лист Китайского
           a(href="#") Прайс-лист Русского
       div.lang-group__list
-        div.lang-group__title Группы:
+        div.lang-group__title.lang-group__title--js Группы:
         div.lang-group__body
-          a(href="#") Для детей
+          a(href="#").active Для детей
           a(href="#") Для подростков
           a(href="#") Для взрослых
           a(href="#") Все группы
@@ -46,5 +46,84 @@ block content
               td
                 div.price__info
                   div.table__old-price
-                  div.table__new-price
+                    span 11 200 р.
+                  div.table__new-price 7 500 р.
                   a(href="#") Записаться
+            tr
+              td.table__lang-name Английский
+              td.table__level Начальный “Begginer”
+              td.table__course-name Начальный курс Английского языка для детей. Стоимость указана за 1 месяц с учетом скидки 50% при оплате за 12 месяцев. Общая стоимость курса – 999 000 рублей. 50 уроков в школе офлайн.
+              td.table__form-training Индивидуально
+              td
+                div.price__info
+                  div.table__old-price
+                    span 11 200 р.
+                  div.table__new-price 7 500 р.
+                  a(href="#") Записаться
+            tr
+              td.table__lang-name Английский
+              td.table__level Начальный “Begginer”
+              td.table__course-name Начальный курс Английского языка для детей. Стоимость указана за 1 месяц с учетом скидки 50% при оплате за 12 месяцев. Общая стоимость курса – 999 000 рублей. 50 уроков в школе офлайн.
+              td.table__form-training Индивидуально
+              td
+                div.price__info
+                  div.table__old-price
+                    span 11 200 р.
+                  div.table__new-price 7 500 р.
+                  a(href="#") Записаться
+            tr
+              td.table__lang-name Английский
+              td.table__level Начальный “Begginer”
+              td.table__course-name Начальный курс Английского языка для детей. Стоимость указана за 1 месяц с учетом скидки 50% при оплате за 12 месяцев. Общая стоимость курса – 999 000 рублей. 50 уроков в школе офлайн.
+              td.table__form-training Индивидуально
+              td
+                div.price__info
+                  div.table__old-price
+                    span 11 200 р.
+                  div.table__new-price 7 500 р.
+                  a(href="#") Записаться
+    section.request__block.wrapper
+      div.request__title Не нашли подходящий вам курс или группу?
+      div.request__subtitle Мы уверены, что сможем быть вам полезны. Оставьте заявку и мы подберем нужный вам вариант обучения.
+      form.request__form
+        div.request__form-title Мы поможем подобрать нужный вам вариант обучения
+        div.request__form-wrapper
+          div.request__form-left
+            label
+              input(type="text" placeholder="Ваше имя")
+            label
+              input(type="text" placeholder="Телефон")
+            label
+              input(type="email" placeholder="E-mail")
+            label
+              input(type="text" placeholder="Сообщение для нас")
+          div.request__form-right
+            label
+              select.select--js
+                option(disabled selected) Желаемое время занятий
+                option 8:00 - 9:00
+                option 8:00 - 9:00
+                option 8:00 - 9:00
+                option 8:00 - 9:00
+                option 8:00 - 9:00
+                option 8:00 - 9:00
+            label
+              select.select--js
+                option(disabled selected) Возраст учащегося
+                option 3 - 5
+                option 6 - 10
+                option 10 - 15
+                option 15 - 17
+                option 18 - 25
+                option 26 - 80
+            label
+              select.select--js
+                option(disabled selected) Индивидуально или в группе?
+                option Индивидуально
+                option В группе
+            label
+              select.select--js
+                option(disabled selected) Выберите язык
+                option Русский
+                option Английский
+        button(type="submit") Отправить заявку

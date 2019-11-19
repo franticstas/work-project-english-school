@@ -13,7 +13,7 @@
 }
 
 .header__nav-list {
-  @include media(1000px) {
+  @include desktop {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -81,7 +81,7 @@
 }
 
 .header__nav-button {
-  @include media(1000px) {
+  @include desktop {
     display: none;
   }
 }
@@ -115,7 +115,7 @@
 /*
  * Стили мобильного меню
  */
-@media (max-width: 1000px) {
+@media (max-width: 1169px) {
   .header__nav {
     position: fixed;
     width: 270px;

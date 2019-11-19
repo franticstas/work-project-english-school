@@ -93,9 +93,21 @@ var swiperTeachers = new Swiper('.teachers--swiper-top', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // breakpointsInverse: true,
-  // breakpoints: {
-  //   1170: {
-  //     spaceBetween: 0,
-  //   },
 });
+
+if ( $(window).width() < 1170 ) {
+  $('.price__body').hide();
+  $('.lang-group__body').hide();
+
+  $('.price__title--js').click(function () {
+    $(this).toggleClass('price__title--open');
+    $(this).next().slideToggle(1000);
+  });
+
+  $('.lang-group__title--js').click(function () {
+    $(this).toggleClass('lang-group__title--open');
+    $(this).next().slideToggle(1000);
+  });
+}
+
+//$('.select--js').select2();

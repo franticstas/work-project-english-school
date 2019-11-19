@@ -1,0 +1,123 @@
+.request__block {
+  padding-bottom: 20px;
+
+  @include desktop {
+    padding-bottom: 48px;
+  }
+}
+
+.request__title {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #4E4E4E;
+  margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 37px;
+  }
+}
+
+.request__subtitle {
+  text-align: center;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.request__form {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24), 0px 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  max-width: 910px;
+  margin: 30px auto;
+
+  @include desktop {
+    margin-top: 80px;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+}
+
+.request__form-title {
+  font-size: 1.275rem;
+  margin-bottom: 32px;
+}
+
+.request__form-wrapper {
+  display: flex;
+  flex-flow: column;
+
+  @include tablet {
+    flex-flow: nowrap;
+  }
+}
+
+.request__form-left,
+.request__form-right {
+  display: flex;
+  flex-flow: column;
+
+  @include tablet {
+    width: 50%;
+    margin: 0 10px;
+  }
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.request__form-left {
+  @include desktop {
+    margin-right: 24px;
+  }
+}
+
+.request__form-right {
+  @include desktop {
+    margin-left: 24px;
+  }
+}
+
+.request__form input,
+.request__form select {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #D3D8DD;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  padding-top: 1.4375rem;
+  padding-bottom: 0.5rem;
+}
+
+.request__form input {
+  padding-bottom: 0.625rem;
+}
+
+.request__form button {
+  width: 205px;
+  margin-top: 20px;
+  background: #016BC1;
+  box-shadow: 0px 2px 2px rgba(156, 39, 176, 0.2);
+  border-radius: 3px;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #ffffff;
+  padding-top: 0.9375rem;
+  padding-bottom: 1rem;
+
+  @include desktop {
+    margin-top: 48px;
+  }
+}

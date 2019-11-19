@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/select2.min.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>Школа инстранных языков</title>
   </head>
@@ -95,12 +96,12 @@
     <section class="price wrapper">
       <h1 class="section-title section-long-title"><span class="section-title__icon"></span><span class="section-title__text">Обучение иностранным языкам в Express Lingua</span></h1>
       <div class="price__list">
-        <div class="price__title">Языки:</div>
-        <div class="price__body"><a href="#">Прайс-лист Английского</a><a href="#">Прайс-лист Немецкого</a><a href="#">Прайс-лист Французского</a><a href="#">Прайс-лист Испанского</a><a href="#">Прайс-лист Китайского</a><a href="#">Прайс-лист Русского</a></div>
+        <div class="price__title price__title--js">Языки:</div>
+        <div class="price__body"><a class="active" href="#">Прайс-лист Английского</a><a href="#">Прайс-лист Немецкого</a><a href="#">Прайс-лист Французского</a><a href="#">Прайс-лист Испанского</a><a href="#">Прайс-лист Китайского</a><a href="#">Прайс-лист Русского</a></div>
       </div>
       <div class="lang-group__list">
-        <div class="lang-group__title">Группы:</div>
-        <div class="lang-group__body"><a href="#">Для детей</a><a href="#">Для подростков</a><a href="#">Для взрослых</a><a href="#">Все группы</a></div>
+        <div class="lang-group__title lang-group__title--js">Группы:</div>
+        <div class="lang-group__body"><a class="active" href="#">Для детей</a><a href="#">Для подростков</a><a href="#">Для взрослых</a><a href="#">Все группы</a></div>
       </div>
       <div class="table__block">
         <table>
@@ -121,14 +122,112 @@
               <td class="table__form-training">Индивидуально</td>
               <td>
                 <div class="price__info">
-                  <div class="table__old-price"></div>
-                  <div class="table__new-price"></div><a href="#">Записаться</a>
+                  <div class="table__old-price"><span>11 200 р.</span></div>
+                  <div class="table__new-price">7 500 р.</div><a href="#">Записаться</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__lang-name">Английский</td>
+              <td class="table__level">Начальный “Begginer”</td>
+              <td class="table__course-name">Начальный курс Английского языка для детей. Стоимость указана за 1 месяц с учетом скидки 50% при оплате за 12 месяцев. Общая стоимость курса – 999 000 рублей. 50 уроков в школе офлайн.</td>
+              <td class="table__form-training">Индивидуально</td>
+              <td>
+                <div class="price__info">
+                  <div class="table__old-price"><span>11 200 р.</span></div>
+                  <div class="table__new-price">7 500 р.</div><a href="#">Записаться</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__lang-name">Английский</td>
+              <td class="table__level">Начальный “Begginer”</td>
+              <td class="table__course-name">Начальный курс Английского языка для детей. Стоимость указана за 1 месяц с учетом скидки 50% при оплате за 12 месяцев. Общая стоимость курса – 999 000 рублей. 50 уроков в школе офлайн.</td>
+              <td class="table__form-training">Индивидуально</td>
+              <td>
+                <div class="price__info">
+                  <div class="table__old-price"><span>11 200 р.</span></div>
+                  <div class="table__new-price">7 500 р.</div><a href="#">Записаться</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__lang-name">Английский</td>
+              <td class="table__level">Начальный “Begginer”</td>
+              <td class="table__course-name">Начальный курс Английского языка для детей. Стоимость указана за 1 месяц с учетом скидки 50% при оплате за 12 месяцев. Общая стоимость курса – 999 000 рублей. 50 уроков в школе офлайн.</td>
+              <td class="table__form-training">Индивидуально</td>
+              <td>
+                <div class="price__info">
+                  <div class="table__old-price"><span>11 200 р.</span></div>
+                  <div class="table__new-price">7 500 р.</div><a href="#">Записаться</a>
                 </div>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+    </section>
+    <section class="request__block wrapper">
+      <div class="request__title">Не нашли подходящий вам курс или группу?</div>
+      <div class="request__subtitle">Мы уверены, что сможем быть вам полезны. Оставьте заявку и мы подберем нужный вам вариант обучения.</div>
+      <form class="request__form">
+        <div class="request__form-title">Мы поможем подобрать нужный вам вариант обучения</div>
+        <div class="request__form-wrapper">
+          <div class="request__form-left">
+            <label>
+              <input type="text" placeholder="Ваше имя">
+            </label>
+            <label>
+              <input type="text" placeholder="Телефон">
+            </label>
+            <label>
+              <input type="email" placeholder="E-mail">
+            </label>
+            <label>
+              <input type="text" placeholder="Сообщение для нас">
+            </label>
+          </div>
+          <div class="request__form-right">
+            <label>
+              <select class="select--js">
+                <option disabled selected>Желаемое время занятий</option>
+                <option>8:00 - 9:00</option>
+                <option>8:00 - 9:00</option>
+                <option>8:00 - 9:00</option>
+                <option>8:00 - 9:00</option>
+                <option>8:00 - 9:00</option>
+                <option>8:00 - 9:00</option>
+              </select>
+            </label>
+            <label>
+              <select class="select--js">
+                <option disabled selected>Возраст учащегося</option>
+                <option>3 - 5</option>
+                <option>6 - 10</option>
+                <option>10 - 15</option>
+                <option>15 - 17</option>
+                <option>18 - 25</option>
+                <option>26 - 80</option>
+              </select>
+            </label>
+            <label>
+              <select class="select--js">
+                <option disabled selected>Индивидуально или в группе?</option>
+                <option>Индивидуально</option>
+                <option>В группе</option>
+              </select>
+            </label>
+            <label>
+              <select class="select--js">
+                <option disabled selected>Выберите язык</option>
+                <option>Русский</option>
+                <option>Английский</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <button type="submit">Отправить заявку</button>
+      </form>
     </section>
   </main>
   <footer class="footer">
@@ -190,5 +289,6 @@
   </footer>
   <script src="js/libs/jquery-3.4.1.min.js"></script>
   <script src="js/libs/swiper.min.js"></script>
+  <script src="js/libs/select2.min.js"></script>
   <script src="js/script.js"></script>
 </html>
