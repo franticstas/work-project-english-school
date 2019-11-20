@@ -110,13 +110,92 @@ if ( $(window).width() < 1170 ) {
   });
 }
 
-//$('.select--js').select2();
+//Табы
+;(function (window, document, $, undefined) {
+  if (!$) {
+    return undefined;
+  }
+  $.fn.extend({
+    SKtab: function (options) {
+      let $th = this;
+      let tabActiveClass = 'active';
+      let containerActiveClass = 'active';
+      let tabContainerClass = 'tab-container';
+      let activeTab = 0;
+
+      if (options.active) {
+        activeTab = options.active;
+      }
+
+      if (options.tabContainerClass) {
+        tabContainerClass = options.tabContainerClass;
+      }
+
+      if (options.tabActiveClass) {
+        tabActiveClass = options.tabActiveClass;
+      }
+
+      if (options.containerActiveClass) {
+        containerActiveClass = options.containerActiveClass;
+      }
+
+      $('.'+tabContainerClass).hide();
+
+      let classess = '.'+this[0].classList[0];
+
+      $(document).on('click', classess, function() {
+        if ($(this).hasClass(tabActiveClass)) {
+          return false;
+        }
+        $(classess).removeClass(tabActiveClass);
+        $(this).addClass(tabActiveClass);
+        let container = '#'+$(this).data('container');
+        $('.'+tabContainerClass).hide();
+        $(container).fadeIn().addClass(containerActiveClass);
+
+        return false;
+      });
+
+      $($(classess)[activeTab]).click();
+
+    }
+  });
+}(window, document, window.jQuery));
+
+$('.tab-item').SKtab({
+  active: 0, //Какой таб будет выбран по умолчанию
+  tabActiveClass: 'active-tab', //Класс который назначается выбранному табу
+  containerActiveClass: 'active', //Класс который назначается выбранному контейнеру
+  tabContainerClass: 'tab-container', //Класс табконтейнеров табов
+});
+
+$('.faq__question-answer').hide();
+
+$('.faq__question-title').on('click', f_faq);
+
+function f_faq(){
+  //e.preventDefault();
+  //скрываем все кроме того, что должны открыть
+  $('.faq__question-answer ').not($(this).next()).slideUp(1000);
+  // открываем или скрываем блок под заголовком, по которому кликнули
+  if ($(this).hasClass('faq__question-title--open')) {
+    $(this).removeClass('faq__question-title--open');
+    $(this).next().slideToggle(1000);
+  }
+  else {
+    $('.faq__question-title').removeClass('faq__question-title--open');
+    $(this).addClass('faq__question-title--open');
+    $(this).next().slideToggle(1000);
+  }
+}
+
+//npm$('.select--js').select2();
 
 //Кастомная метка на картах
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
-      center: [47.244295, 39.594800],
-      zoom: 17
+      center: [47.235277, 39.704988],
+      zoom: 16
     }, {
       searchControlProvider: 'yandex#search'
     }),
@@ -127,14 +206,14 @@ ymaps.ready(function () {
     ),
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-      hintContent: 'Компания «ZWEB»',
-      balloonContent: 'Компания «ZWEB»'
+      hintContent: 'Языковой центр в Ростове-на-Дону Express Lingua',
+      balloonContent: 'Языковой центр в Ростове-на-Дону Express Lingua'
     }, {
       // Опции.
       // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
       // Своё изображение иконки метки.
-      iconImageHref: 'src/img/GeoMark.png',
+      iconImageHref: 'img/map-logo.png',
       // Размеры метки.
       iconImageSize: [168, 84],
       // Смещение левого верхнего угла иконки относительно
@@ -145,5 +224,3 @@ ymaps.ready(function () {
   myMap.geoObjects
     .add(myPlacemark);
 });
-});
-

@@ -2,11 +2,11 @@ extends pages/base.pug
 
 block content
   div.breadcrumbs.wrapper
-      ul.breadcrumbs__list
-        li.breadcrumbs__item
-          a(href="#") Главная
-        li.breadcrumbs__item
-          a Контакты
+    ul.breadcrumbs__list
+      li.breadcrumbs__item
+        a(href="#") Главная
+      li.breadcrumbs__item
+        a Контакты
   main
     section.contacts.wrapper
       h1.section-title.section-long-title
@@ -35,4 +35,5 @@ block content
               span Вс с 10:00 до 15:00
               span Звонки принимаются по будням — с 10:00 до 21:00, в выходные с 9:00 до 19:00
         div.contacts__right
-          div.contacts__map
+          div.contacts__map#map
+

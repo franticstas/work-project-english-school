@@ -1,0 +1,90 @@
+extends pages/base.pug
+
+block content
+  div.breadcrumbs.wrapper
+    ul.breadcrumbs__list
+      li.breadcrumbs__item
+        a(href="#") Главная
+      li.breadcrumbs__item
+        a Вопросы и ответы
+  main
+    section.faq.wrapper
+      h1.section-title
+        span.section-title__icon
+        span.section-title__text Вопросы и ответы
+      div.section__sub-title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      div.faq__tabs
+        div.faq__tabs-container
+          div(data-container="tab1").tab-item Как проходит обучение
+          div(data-container="tab2").tab-item Оплата за занятия
+          div(data-container="tab3").tab-item Клубная деятельность
+        div.tab-container#tab1
+          //- Список вопросов
+          ul.faq__question-list
+            //- Вопрос 1
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+        div.tab-container#tab2
+          ul.faq__question-list
+            //- Вопрос 1
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+        div.tab-container#tab3
+          ul.faq__question-list
+            //- Вопрос 1
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+            li.faq__question-item
+              div.faq__question-title Lorem ipsum dolor sit amet, consectetur adipiscing?
+              div.faq__question-answer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+    section.ask-us.wrapper
+      h3.ask-us__title Не нашли ответ на свой вопрос?
+      div.ask-us__subtitle Мы уверены, что сможем быть вам полезны. Оставьте ваш вопрос и мы ответим вам на него.
+      form.ask-us__form
+        div.ask-us__form-title Спросите нас о том, что вы хотели бы знать
+        label
+          input(type="text" placeholder="Ваше имя")
+        label
+          input(type="text" placeholder="Телефон")
+        label
+          input(type="mail" placeholder="E-mail")
+        label
+          textarea(rows="5" placeholder="Напишите свой вопрос")
+        button(type="submit") Задать вопрос
+

@@ -1,0 +1,152 @@
+.faq {
+
+}
+
+.faq .section-title {
+  @include media(1360px) {
+    margin-bottom: 40px;
+  }
+}
+
+.section__sub-title {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+}
+
+.faq__tabs {
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+
+  @include desktop {
+    margin-top: 80px;
+    flex-flow: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.faq__tabs-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  @include desktop {
+    order: 2;
+    flex: 0 1 334px;
+    margin-left: 20px;
+  }
+}
+
+.tab-container {
+  @include desktop {
+    width: 100%;
+    max-width: 944px;
+  }
+}
+
+.tab-item {
+  min-height: 94px;
+  max-width: 334px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.16);
+  padding-left: 123px;
+  padding-right: 5px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-weight: 700;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='40' viewBox='0 0 50 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.64958 0.900391C7.64824 0.900391 7.64672 0.900391 7.64537 0.900391C7.17248 0.900391 6.72769 1.08473 6.39183 1.41975C6.05227 1.75847 5.86523 2.20949 5.86523 2.68962V29.5188C5.86523 30.5027 6.66877 31.305 7.65665 31.3076C11.8213 31.3175 18.7988 32.1855 23.6123 37.2227V9.1452C23.6123 8.8117 23.5271 8.49839 23.3663 8.23913C19.4156 1.87682 11.8237 0.910155 7.64958 0.900391Z' fill='url(%23paint0_linear)'/%3E%3Cpath d='M44.1355 29.519V2.68962C44.1355 2.20949 43.9485 1.75847 43.6089 1.41975C43.2731 1.08473 42.828 0.900391 42.3556 0.900391C42.354 0.900391 42.3525 0.900391 42.3512 0.900391C38.1773 0.910323 30.5853 1.87699 26.6345 8.2393C26.4737 8.49856 26.3887 8.81187 26.3887 9.14537V37.2227C31.2022 32.1855 38.1796 31.3175 42.3443 31.3076C43.332 31.305 44.1355 30.5027 44.1355 29.519Z' fill='url(%23paint1_linear)'/%3E%3Cpath d='M48.2111 7.08789H46.9138V29.5191C46.9138 32.0311 44.8672 34.0794 42.3513 34.0856C38.8188 34.094 32.9942 34.7848 28.8691 38.689C36.0035 36.9422 43.5244 38.0777 47.8106 39.0545C48.3458 39.1764 48.8988 39.0505 49.3276 38.7087C49.7549 38.3678 50 37.8582 50 37.3112V8.87679C50.0002 7.89042 49.1975 7.08789 48.2111 7.08789Z' fill='url(%23paint2_linear)'/%3E%3Cpath d='M3.08621 29.5191V7.08789H1.7889C0.802696 7.08789 0 7.89042 0 8.87679V37.3107C0 37.8579 0.245119 38.3673 0.672393 38.7082C1.10085 39.0498 1.65337 39.1762 2.1894 39.054C6.47561 38.0771 13.9967 36.9417 21.1307 38.6885C17.0058 34.7845 11.1812 34.0939 7.64868 34.0855C5.13301 34.0794 3.08621 32.0311 3.08621 29.5191Z' fill='url(%23paint3_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='8.04376' y1='56.5119' x2='24.2995' y2='56.4539' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23374283'/%3E%3Cstop offset='1' stop-color='%23277CCF'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='28.5672' y1='56.5119' x2='44.8228' y2='56.4539' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23374283'/%3E%3Cstop offset='1' stop-color='%23277CCF'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear' x1='31.4631' y1='56.1001' x2='50.8182' y2='56.0068' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23374283'/%3E%3Cstop offset='1' stop-color='%23277CCF'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint3_linear' x1='2.59389' y1='56.0995' x2='21.9488' y2='56.0062' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23374283'/%3E%3Cstop offset='1' stop-color='%23277CCF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #EDEDED;
+  }
+}
+
+.tab-item.active-tab {
+  background: linear-gradient(88.51deg, #374283 11.8%, #277CCF 102.74%);
+  color: #ffffff;
+
+  &::before {
+    border-right: 1px solid #277CCF;
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='40' viewBox='0 0 50 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.64958 0.900391C7.64824 0.900391 7.64672 0.900391 7.64537 0.900391C7.17248 0.900391 6.72769 1.08473 6.39183 1.41975C6.05227 1.75847 5.86523 2.20949 5.86523 2.68962V29.5188C5.86523 30.5027 6.66877 31.305 7.65665 31.3076C11.8213 31.3175 18.7988 32.1855 23.6123 37.2227V9.1452C23.6123 8.8117 23.5271 8.49839 23.3663 8.23913C19.4156 1.87682 11.8237 0.910155 7.64958 0.900391Z' fill='white'/%3E%3Cpath d='M44.1355 29.519V2.68962C44.1355 2.20949 43.9485 1.75847 43.6089 1.41975C43.2731 1.08473 42.828 0.900391 42.3556 0.900391C42.354 0.900391 42.3525 0.900391 42.3512 0.900391C38.1773 0.910323 30.5853 1.87699 26.6345 8.2393C26.4737 8.49856 26.3887 8.81187 26.3887 9.14537V37.2227C31.2022 32.1855 38.1796 31.3175 42.3443 31.3076C43.332 31.305 44.1355 30.5027 44.1355 29.519Z' fill='white'/%3E%3Cpath d='M48.2111 7.08789H46.9138V29.5191C46.9138 32.0311 44.8672 34.0794 42.3513 34.0856C38.8188 34.094 32.9942 34.7848 28.8691 38.689C36.0035 36.9422 43.5244 38.0777 47.8106 39.0545C48.3458 39.1764 48.8988 39.0505 49.3276 38.7087C49.7549 38.3678 50 37.8582 50 37.3112V8.87679C50.0002 7.89042 49.1975 7.08789 48.2111 7.08789Z' fill='white'/%3E%3Cpath d='M3.08621 29.5191V7.08789H1.7889C0.802696 7.08789 0 7.89042 0 8.87679V37.3107C0 37.8579 0.245119 38.3673 0.672393 38.7082C1.10085 39.0498 1.65337 39.1762 2.1894 39.054C6.47561 38.0771 13.9967 36.9417 21.1307 38.6885C17.0058 34.7845 11.1812 34.0939 7.64868 34.0855C5.13301 34.0794 3.08621 32.0311 3.08621 29.5191Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+}
+
+.faq__question-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq__question-item {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.16);
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.faq__question-title {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+  padding-top: 1.0625rem;
+  padding-bottom: 1rem;
+  padding-left: 16px;
+  padding-right: 20px;
+  position: relative;
+  cursor: pointer;
+
+  @include desktop {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 5.07812L1.76597 0.356351C1.36198 -0.0941784 0.706983 -0.0941784 0.302992 0.356351C-0.100998 0.806879 -0.100998 1.53733 0.302992 1.98786L5.26851 7.52538C5.6725 7.97591 6.3275 7.97591 6.73149 7.52538L11.697 1.98786C12.101 1.53733 12.101 0.80688 11.697 0.356351C11.293 -0.0941782 10.638 -0.0941782 10.234 0.356351L6 5.07812Z' fill='%234E4E4E'/%3E%3C/svg%3E%0A");
+    width: 12px;
+    height: 8px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include desktop {
+      right: 40px;
+    }
+  }
+}
+
+.faq__question-title--open {
+  &::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.faq__question-answer {
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  padding: 16px;
+  border-top: 1px solid #EBEFF2;
+
+  @include desktop {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
