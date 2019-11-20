@@ -1,0 +1,64 @@
+extends pages/base.pug
+
+block content
+  div.breadcrumbs.wrapper
+    ul.breadcrumbs__list
+      li.breadcrumbs__item
+        a(href="#") Главная
+      li.breadcrumbs__item
+        a Блог
+  div.blog__wrapper.wrapper
+    main.blog__main
+      article.blog__block
+        h2.blog__title Lorem ipsum dolor sit amet
+        div.blog__info
+          time(datetime="2019-10-15").time-block Октябрь 15, 2019
+          div.blog__category
+            div.blog__category-name Категория:
+            ul.blog__category-list
+              li.blog__catehory-item
+                a(href="#") Все
+              li.blog__catehory-item
+                a(href="#") Путешествия
+        div.blog__img
+          img(src="img/img-blog.jpg")
+        div.blog__short-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        a(href="#").blog__link Подробнее
+    //- Правый сайдбар с категориями и поиском
+    aside.blog__sidebar
+      form.sidebar__search
+        label
+          input(type="text" placeholder="Найти пост")
+        button(type="submit")
+      div.sidebar__category
+        div.sidebar__title Категории
+        ul.sidebar__category-list
+          li.sidebar__category-item
+            a Все (123)
+          li.sidebar__category-item
+            a Путешествия (20)
+          li.sidebar__category-item
+            a Обучение за границей (25)
+          li.sidebar__category-item
+            a Второй язык для детей (555)
+          li.sidebar__category-item
+            a Второй язык для детей (45)
+      div.sidebar__recommended
+        div.sidebar__title Рекомендованные статьи
+        ul.sidebar__recommended-list
+          li.sidebar__recommended-item
+            a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            time(datetime="2019-10-15").time-block Октябрь 15, 2019
+          li.sidebar__recommended-item
+            a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            time(datetime="2019-10-15").time-block Октябрь 15, 2019
+          li.sidebar__recommended-item
+            a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            time(datetime="2019-10-15").time-block Октябрь 15, 2019
+          li.sidebar__recommended-item
+            a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            time(datetime="2019-10-15").time-block Октябрь 15, 2019
+          li.sidebar__recommended-item
+            a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            time(datetime="2019-10-15").time-block Октябрь 15, 2019
+      div.sidebar__tags

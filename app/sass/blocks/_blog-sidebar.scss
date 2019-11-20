@@ -1,0 +1,29 @@
+.blog__sidebar {/*Правый раздел для блога*/
+  display: none;
+
+  @include desktop {
+    display: flex;
+    flex-flow: column;
+    flex: 1 0 268px;
+  }
+}
+
+.sidebar__search {
+  position: relative;
+}
+
+.sidebar__search label {
+  width: 100%;
+}
+
+.sidebar__search input {
+  width: 100%;
+}
+
+.sidebar__search button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,121 @@
+.blog__wrapper {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.blog__main {/*Основной раздел с блогами*/
+  @include desktop {
+
+  }
+}
+
+.blog__block {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #4E4E4E;
+  margin-bottom: 20px;
+}
+
+.blog__title {
+  font-size: 1.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.blog__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.blog__info .time-block {
+  margin-right: 24px;
+}
+
+.blog__category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.blog__category-name {
+  color: #4E4E4E;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  padding-left: 24px;
+  margin-right: 16px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 60%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4E4E4E;
+  }
+}
+
+.blog__category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog__catehory-item {
+  margin-right: 10px;
+}
+
+.blog__catehory-item a {
+  text-decoration: none;
+  color: #016BC1;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-weight: 700;
+}
+
+.blog__img {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  max-height: 366px;
+}
+
+.blog__img img {
+  width: 100%;
+  height: auto;
+}
+
+.blog__short-text {
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  margin-bottom: 24px;
+}
+
+.blog__link {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #016BC1;
+  position: relative;
+  padding-right: 15px;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.78109 5L0.25273 1.47164C-0.0839291 1.13498 -0.0839291 0.589153 0.25273 0.252494C0.589389 -0.0841653 1.13522 -0.0841653 1.47188 0.252494L5.60981 4.39043C5.94647 4.72708 5.94647 5.27292 5.60981 5.60957L1.47188 9.74751C1.13522 10.0842 0.589389 10.0842 0.25273 9.74751C-0.0839291 9.41085 -0.0839291 8.86501 0.25273 8.52836L3.78109 5Z' fill='%23016BC1'/%3E%3C/svg%3E");
+    width: 6px;
+    height: 10px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
