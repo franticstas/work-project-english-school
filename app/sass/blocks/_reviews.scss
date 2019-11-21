@@ -1,6 +1,11 @@
 .reviews {
   overflow: hidden;
   padding-bottom: 120px;
+  padding-top: 30px;
+
+  @include desktop {
+    padding-top: 120px;
+  }
 }
 
 .reviews .wrapper {

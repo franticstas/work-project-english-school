@@ -70,6 +70,22 @@ if ( $(window).width() < 768 ) {
       el: '.swiper-pagination',
     },
   });
+
+  var swiperCorporate = new Swiper('.corporate-swiper', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    breakpointsInverse: true,
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      320: {
+        slidesPerView: 1,
+      }
+    }
+  });
 }
 
 var gallerySubteachers = new Swiper('.subteachers--swiper-thumb', {

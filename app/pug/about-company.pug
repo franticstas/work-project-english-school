@@ -6,65 +6,19 @@ block content
       li.breadcrumbs__item
         a(href="#") Главная
       li.breadcrumbs__item
-        a Выбрать язык
+        a О компании
   main
-    section.learning-lang.wrapper
+    section.about-company.wrapper
       h1.section-title.section-long-title
         span.section-title__icon
-        span.section-title__text Обучение иностранным языкам в Express Lingua
-      ul.learning-lang__list
-        li.learning-lang__item.learning-lang__item--english
-          a(href="#")
-            span Английский язык
-          ul
-            li
-              a(href="#") Английский для детей
-            li
-              a(href="#") Английский для студентов
-            li
-              a(href="#") Английский для взрослых
-            li
-              a(href="#") Английский для бизнеса
-            li
-              a(href="#") Корпоративное обучение
-            li
-              a(href="#") Онлайн обучение по скайпу
-        li.learning-lang__item.learning-lang__item--german
-          a(href="#")
-            span Немецкий язык
-          ul
-            li
-              a(href="#") Английский для студентов
-        li.learning-lang__item.learning-lang__item--franch
-          a(href="#")
-            span Французский язык
-          ul
-            li
-              a(href="#") Английский для взрослых
-        li.learning-lang__item.learning-lang__item--spanish
-          a(href="#")
-            span Испанский язык
-          ul
-            li
-              a(href="#") Английский для бизнеса
-        li.learning-lang__item.learning-lang__item--chinese
-          a(href="#")
-            span Китайский язык
-          ul
-            li
-              a(href="#") Подготовка к экзаменам
-        li.learning-lang__item.learning-lang__item--russian
-          a(href="#")
-            span Русский как иностранный язык
-          ul
-            li
-              a(href="#") Корпоративное обучение
+        span.section-title__text Express Lingua языковой центр в Ростове-на-Дону
       div.text-block
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         h2 Lorem ipsum dolor sit amet dolor sit amet
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
       div.more-info__block
         div.more-info__text
           h3.more-info__title Мы стараемся сделать наши занятия лучшим моментом вашего дня!
@@ -73,5 +27,13 @@ block content
             b Мы уделяем большое внимание мотивации к общению и создаем все условия, чтобы взаимодействие учащихся было целенаправленным.
         div.more-info__img
           img(src="img/img-more.jpg")
-    //- Вставка секции наши преподаватели
-    include modules/teachers__slider
+    //- Вставка наши преподаватели
+    include modules/teachers__slider.pug
+    //- Подписка
+    include modules/sign-up
+    //- Отзывы учеников
+    include modules/reviews
+    //- Корпоративные клиенты
+    include modules/corporate-clients
+    //- Контакты
+    include modules/contacts
