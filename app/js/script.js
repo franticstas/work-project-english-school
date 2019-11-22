@@ -124,6 +124,16 @@ if ( $(window).width() < 1170 ) {
     $(this).toggleClass('lang-group__title--open');
     $(this).next().slideToggle(1000);
   });
+
+  $('.header__nav-item--sub a').on('click', f_sub);
+
+  function f_sub(e){
+    e.preventDefault();
+    //скрываем все кроме того, что должны открыть
+    $('.header__nav-item--sub ul').not($(this).next()).slideUp(1000);
+    // открываем или скрываем блок под заголовком, по которому кликнули
+    $(this).next().slideToggle(1000);
+  }
 }
 
 //Табы

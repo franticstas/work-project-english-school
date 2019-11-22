@@ -93,9 +93,6 @@
   font-weight: 600;
   line-height: 1.0625rem;
   margin-bottom: 16px;
-  padding-left: 1.142em;
-  padding-top: 0.785em;
-  padding-bottom: 0.857em;
   position: relative;
 
   @include media(1360px) {
@@ -115,19 +112,33 @@
 }
 
 .learning__courses-item a {
+  padding-left: 1.142em;
+  padding-top: 0.785em;
+  padding-bottom: 0.857em;
   color: #ffffff;
   text-decoration: none;
+  display: block;
 }
 
-.learning__courses-item:hover a {
+
+
+.learning__courses-item:hover a,
+.learning__courses-item:active a,
+.learning__courses-item:focus a {
   color: #016BC1;
 }
 
-.learning__courses-item:hover {
-  background-color: #ffffff;
+.learning__courses-item {
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: #ffffff;
 
-  &::after {
-    background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.27702 7.80045L4.72984 4.62934C5.05423 4.33142 5.09179 3.80815 4.81375 3.46058C4.78797 3.42835 4.75992 3.3983 4.72984 3.37067L1.27702 0.199563C0.952641 -0.0983553 0.464278 -0.0581036 0.186235 0.289467C0.0660576 0.439696 -3.22108e-07 0.631033 -3.13459e-07 0.828896L-3.62315e-08 7.17112C-1.62214e-08 7.6289 0.346345 8 0.773583 8C0.958246 8 1.13682 7.92922 1.27702 7.80045Z' fill='%23016BC1'/%3E%3C/svg%3E%0A");
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.27702 7.80045L4.72984 4.62934C5.05423 4.33142 5.09179 3.80815 4.81375 3.46058C4.78797 3.42835 4.75992 3.3983 4.72984 3.37067L1.27702 0.199563C0.952641 -0.0983553 0.464278 -0.0581036 0.186235 0.289467C0.0660576 0.439696 -3.22108e-07 0.631033 -3.13459e-07 0.828896L-3.62315e-08 7.17112C-1.62214e-08 7.6289 0.346345 8 0.773583 8C0.958246 8 1.13682 7.92922 1.27702 7.80045Z' fill='%23016BC1'/%3E%3C/svg%3E%0A");
+    }
   }
 }
 
@@ -142,12 +153,20 @@
   padding-top: 0.785em;
   padding-bottom: 0.857em;
   margin-top: auto;
-  //display: block;
   text-align: center;
+
+  &:active,
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
+  }
 
   @include media(1360px) {
     align-self: flex-end;
-    padding: 0;
+    //padding: 0;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 3px;
     background-color: transparent;
     color: #ffffff;
     position: relative;
@@ -162,7 +181,7 @@
       width: 5px;
       height: 8px;
       right: 5px;
-      top: 6px;
+      top: 8px;
     }
   }
 }

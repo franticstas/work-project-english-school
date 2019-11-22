@@ -7,6 +7,7 @@ html(lang="ru")
       //block script
       link(rel='stylesheet', href='/css/swiper.min.css', type='text/css')
       link(rel='stylesheet', href='/css/select2.min.css', type='text/css')
+      link(rel='stylesheet', href='/css/jquery.fancybox.min.css', type='text/css')
       link(rel='stylesheet', href='/css/style.css', type='text/css')
       title Школа инстранных языков
   body
@@ -38,7 +39,13 @@ html(lang="ru")
                 input(type="text" placeholder="Телефон")
               label
                 input(type="email" placeholder="E-mail")
-              button(type="submit") Отправить заявку
+              label
+                select
+                  option(disabled selected) Выберите язык
+                  option Английский
+                  option Испанский
+                  option Китайский
+              button(type="submit").blue-button Записаться на пробное занятие
   block content
 
   footer.footer
@@ -107,7 +114,10 @@ html(lang="ru")
         div.footer__bottom-left 2019 Express Lingua
         div.footer__bottom-right Разработано
           a(href="#") Zweb
+  //- Модальные блоки
+  include ../modules/modal__reviews
   script( src="js/libs/jquery-3.4.1.min.js")
+  script( src="js/libs/jquery.fancybox.min.js")
   script( src="js/libs/swiper.min.js")
   script( src="js/libs/select2.min.js")
   script( src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e180eaa5-fdd4-40b5-b3b5-79e9b7a2bbde" type="text/javascript")

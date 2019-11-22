@@ -14,8 +14,8 @@
 
 .advantages__top-left {
   text-align: center;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
   letter-spacing: 1px;
 
   @include media(1360px) {
@@ -62,6 +62,7 @@
   @include media(1360px) {
     max-width: 592px;
     justify-content: space-between;
+    align-items: stretch;
   }
 
   @include media(1460px) {
@@ -86,6 +87,12 @@
   max-width: 280px;
 
   @include tablet {
+    margin: 16px;
+    margin-bottom: 32px;
+  }
+
+  @include media(1360px) {
+    margin: 0;
     margin-bottom: 32px;
   }
 
@@ -95,10 +102,6 @@
 }
 
 .advantages__top-right a:nth-child(2n) {
-  @include tablet {
-    margin-left: 32px;
-  }
-
   @include media(1360px) {
     margin-left: 0;
   }
@@ -186,7 +189,7 @@
 }
 
 .advantages__bottom-subtitle {
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5rem;
   color: #4E4E4E;
   text-align: center;
@@ -269,6 +272,9 @@
   left: 0;
   right: 0;
   content: "";
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 3px;
 
   @include tablet {
     position: relative;
@@ -290,6 +296,13 @@
       transform: translateY(-50%);
       right: 10px;
     }
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
   }
 }
 

@@ -6,6 +6,7 @@
     <!--block script-->
     <link rel="stylesheet" href="/css/swiper.min.css" type="text/css">
     <link rel="stylesheet" href="/css/select2.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>Школа инстранных языков</title>
   </head>
@@ -80,7 +81,15 @@
               <label>
                 <input type="email" placeholder="E-mail">
               </label>
-              <button type="submit">Отправить заявку</button>
+              <label>
+                <select>
+                  <option disabled selected>Выберите язык</option>
+                  <option>Английский</option>
+                  <option>Испанский</option>
+                  <option>Китайский</option>
+                </select>
+              </label>
+              <button class="blue-button" type="submit">Записаться на пробное занятие</button>
             </form>
           </div>
         </div>
@@ -180,7 +189,21 @@
       </div>
     </div>
   </footer>
+  <div class="modal__reviews" id="modal-reviews">
+    <div class="modal__reviews-block">
+      <div class="modal__reviews-img"><img src="img/img-review.jpg" width="489" height="456"></div>
+      <div class="modal__reviews-info">
+        <div class="modal__reviews-title">Анастасия Приходько</div>
+        <div class="modal__reviews-description">
+          <div><span>Курс:</span><span>Базовый курс по Английскому языку</span></div>
+          <div><span>Академические часы:</span><span>224 часа</span></div>
+        </div>
+        <div class="modal__reviews-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</div><a class="blue-button" data-fancybox data-src="#modal-reviews" href="javascript:;">Видео отзыв</a>
+      </div>
+    </div>
+  </div>
   <script src="js/libs/jquery-3.4.1.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
   <script src="js/libs/swiper.min.js"></script>
   <script src="js/libs/select2.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=e180eaa5-fdd4-40b5-b3b5-79e9b7a2bbde" type="text/javascript"></script>

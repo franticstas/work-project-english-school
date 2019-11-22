@@ -113,7 +113,7 @@
   display: flex;
   flex-flow: column;
 
-  @include media(1170px) {
+  @include media(1360px) {
     flex-flow: row;
   }
 }
@@ -127,8 +127,9 @@
   padding-left: 2.875em;
   padding-right: 2.875em;
   margin-bottom: 1rem;
+  line-height: 1.1875rem;
 
-  @include media(1170px) {
+  @include media(1360px) {
     margin-bottom: 0;
     margin-right: 30px;
   }

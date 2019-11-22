@@ -131,7 +131,9 @@
     left: auto;
     bottom: auto;
     transform: none;
-    padding: 0;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 3px;
     padding-right: 35px;
     background: transparent;
     box-shadow: none;
@@ -152,6 +154,14 @@
       right: 10px;
     }
   }
+
+  &:active,
+  &:hover,
+  &:focus {
+    @include media(1360px) {
+      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
 }
 
 .reviews__more {
@@ -163,3 +173,7 @@
   }
 }
 
+.reviews__more a {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}

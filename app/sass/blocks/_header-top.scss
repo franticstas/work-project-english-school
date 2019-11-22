@@ -13,6 +13,14 @@
 .header-top a {
   text-decoration: none;
   color: #000000;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    color: #016BC1;
+  }
 }
 
 .header-top__left {
@@ -20,12 +28,22 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 100%;
+
+  @include tablet {
+    width: auto;
+  }
+}
+
+.header-top__left img {
+  margin-bottom: 10px;
 }
 
 .header-top__left span {
   font-weight: 500;
   max-width: 180px;
   margin: 0 10px;
+  margin-bottom: 10px;
   text-align: center;
 
   @include tablet {
@@ -41,6 +59,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
+  justify-content: center;
+
+  @include tablet {
+    width: auto;
+  }
 }
 
 .header-top__phone-email {
@@ -78,6 +102,11 @@
   line-height: 17px;
   position: relative;
   min-height: 40px;
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
 
   @include desktop {
     margin-left: 60px;

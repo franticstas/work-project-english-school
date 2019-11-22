@@ -1,0 +1,118 @@
+.modal__reviews {
+  width: 80%;
+  max-width: 600px;
+  background-color: transparent;
+  display: none;
+
+  @include media(1360px) {
+    width: 90%;
+    max-width: 1185px;
+    padding-top: 29px;
+    padding-left: 100px;
+    position: relative;
+  }
+}
+
+.modal__reviews .fancybox-close-small {
+  top: 45px !important;
+  right: 45px !important;
+
+  @include media(1360px) {
+    top: 30px !important;
+  }
+}
+
+.modal__reviews-block {
+  display: flex;
+  flex-flow: column;
+  background-color: #ffffff;
+  padding: 32px;
+
+  @include media(1360px) {
+    flex-flow: row;
+    min-height: 456px;
+    padding-left: 491px;
+    padding-right: 101px;
+  }
+}
+
+.modal__reviews-img {
+  @include media(1360px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 489px;
+    height: 456px;
+  }
+}
+
+.modal__reviews-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal__reviews-info {
+  display: flex;
+  flex-flow: column;
+}
+
+.modal__reviews-title {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.modal__reviews-description {
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #4E4E4E;
+}
+
+.modal__reviews-description div {
+  margin-bottom: 8px;
+}
+
+.modal__reviews-description div span:nth-child(2n) {
+  margin-left: 10px;
+  color: #1B1B1B;
+}
+
+.modal__reviews-text {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #4E4E4E;
+  position: relative;
+  padding-top: 24px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    max-width: 175px;
+    height: 2px;
+    background-color: #016BC1;
+    top: 0;
+    left: 0;
+  }
+}
+
+.modal__reviews-info a {
+  align-self: flex-start;
+  margin-top: 32px;
+  position: relative;
+  padding-left: 71px;
+  padding-right: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.78783 15.7256L14.6218 11.3653C15.0759 10.9557 15.1285 10.2362 14.7393 9.7583C14.7032 9.71399 14.6639 9.67266 14.6218 9.63468L9.78783 5.2744C9.3337 4.86476 8.64999 4.92011 8.26073 5.39802C8.09248 5.60458 8 5.86767 8 6.13973L8 14.8603C8 15.4897 8.48488 16 9.08302 16C9.34155 16 9.59155 15.9027 9.78783 15.7256Z' fill='white'/%3E%3Ccircle cx='10.5' cy='10.5' r='10' stroke='white'/%3E%3C/svg%3E%0A");
+    width: 21px;
+    height: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+  }
+}
